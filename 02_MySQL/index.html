@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>02 MySQL DB</title>
+
+<!-- LOAD GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,600" rel="stylesheet"> 
+
+<!-- LATEST VERSION OF JQUERY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+
+<!-- META TAGE FOR DO NOT LIE -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><!--', maximum-scale=1' prevents users zooming on mobile-->
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<!-- STYLE SHEETS -->
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/phone-default.css" rel="stylesheet">
+<link href="css/tablet.css" rel="stylesheet">
+<link href="css/desktop.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+	<header>
+	<h1>Report an Abduction</h1>
+	</header>
+
+	<nav>
+	<!-- Put stuff here for links -->
+	</nav>
+
+	<div class="contentBG">	
+	<img class="ufoImg" src="images/ufo.png">
+	<div class="content">
+		<form action="saveToDB.php" method="POST" enctype="multipart/form-data">
+		<fieldset>
+			<legend>Contact Info</legend>
+			<label><p>Name: </p><input type="text" name="name"></label>
+			<label><p>Email: </p><input type="email" name="email"></label>
+		</fieldset>
+		<fieldset>
+			<legend>Abduction Info</legend>
+			<label><p>Date of Abduction: </p><input type="date" name="date"></label>
+			<label><p>Location of Abduction: </p><input type="text" name="location"></label>
+			<label><p>Shape of UFO: </p>
+			<div class="checkList">
+				<div class="check"><input type="radio" name="ufo" value="Disk">Disk</div>
+				<div class="check"><input type="radio" name="ufo" value="Sphere">Sphere</div>
+				<div class="check"><input type="radio" name="ufo" value="Triangle">Triangle</div>
+				<div class="check"><input type="radio" name="ufo" value="Cigar">Cigar</div>
+			</div>
+			</label>
+		</fieldset>
+		<fieldset>
+			<legend>Other</legend>
+			<label><p>Tell us your story here: </p><input class="storyBox" type="text" name="story"></label>
+		</fieldset>
+		<input class="submitBtn" type="submit" name="submitBtn" value="Send Report!">
+		<div class="shootingStar"></div>
+		</form>
+	</div> <!-- end content wrapper -->
+	</div>
+
+
+	<footer>
+		2017 &bull; Austin Broadhead &bull; DGM 3760
+	</footer>
+</div> <!-- end container -->
+
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+</html>

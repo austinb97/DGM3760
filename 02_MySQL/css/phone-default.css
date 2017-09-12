@@ -1,0 +1,109 @@
+/*Prevents iphone from resizing in landscape mode*/
+html {-webkit-text-size-adjust: none;}
+
+/*Apply a natural box layout model to all elements*/
+* {box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
+
+
+/*-----MAIN BODY STYLES-----*/
+body{
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300; /*also loaded 600 for bold*/
+	background-image: url(../images/ep_naturalblack.png);
+}
+.container{
+	min-width: 320px;
+	max-width: 1140px;
+}
+
+/*-----HEADER STYLES-----*/
+header {
+	font-weight: 600;
+	width: 100%;
+	margin: 30px 0 10px 4%;
+}
+header h1{
+	font-size: 2em;
+	color: #40E3A9;
+}
+header h2{
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+/*-----CONTENT STYLES-----*/
+.ufoImg{
+	float: right;
+	width: 20%;
+	margin: -80px -100px 0 0;
+}
+
+.contentBG{
+	background-color: rgba(255,255,255,0.5);
+	padding: 20px 2%;
+	border-radius: 5px;
+}
+.content {
+	margin: 20px 0;
+}
+fieldset{
+	margin: 20px 0;
+}
+legend{
+	font-size: 1.2em;
+	font-weight: 600;
+}
+label{
+	display: block;
+	margin: 5px 2%;
+}
+label p{
+	display: inline-block;
+}
+input{
+	display: inline-block;
+	margin-left: 5px;
+}
+.check{
+	display: block;
+	margin-left: 2%;
+}
+.storyBox{
+	display: block;
+	height: 100px;
+	width: 300px;
+}
+.submitBtn{
+	margin-left: 20%;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: transparent;
+	border: 2px solid #40E3A9;
+	color: #40E3A9;
+	font-size: 1.2em;
+}
+.submitBtn:hover{
+	color: #555;
+	background-color: #40E3A9;
+}
+
+.shootingStar{
+	height: 5px;
+	width: 800px;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 10px;
+	transform: rotate(20deg) translateX(-2000px);	
+	transition:0.3s;
+}
+.submitBtn:hover + .shootingStar{
+	transform: rotate(20deg) translate(1500px,10px);
+}
+
+
+/*-----FOOTER STYLES-----*/
+footer {
+	text-align: center;
+	padding: 10px;
+	color: #40E3A9;
+}
